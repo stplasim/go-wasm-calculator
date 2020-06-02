@@ -37,7 +37,7 @@ module.exports = {
     plugins: [
        new CopyPlugin({
            patterns: [
-               { from: './src/lib/wasm-exec-min.js' },
+               { from: './src/lib/wasm-exec.js' },
                { from: './src/go/lib.wasm' }
            ]
        }),
