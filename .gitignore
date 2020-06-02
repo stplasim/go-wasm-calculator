@@ -8,4 +8,4 @@ node_modules
 # Project
 *.wasm
 dist/*
-src/lib/*
+src/lib/wasm_exec.js
