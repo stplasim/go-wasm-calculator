@@ -1,3 +1,7 @@
+import pushToStack = wasm.pushToStack;
+import calcStack = wasm.calcStack;
+import clearStack = wasm.clearStack;
+
 let number = "";
 
 // Setup event listeners
@@ -11,22 +15,18 @@ document.querySelectorAll('.btn').forEach(elm => {
        }
 
        if(value.match(/^[+\-X\/]$/)) {
-           // @ts-ignore
            pushToStack(number, value);
            display("0");
            number = "";
        }
 
         if(value === "=") {
-            // @ts-ignore
             pushToStack(number, ".");
-            // @ts-ignore
-            display(calcStack());
+            display(calcStack().toString());
             number = "";
         }
 
         if(value === "Del") {
-            // @ts-ignore
             clearStack();
             number = "";
             display("0");
