@@ -4,4 +4,7 @@
 
 # node stuff
 node_modules
- 
+
+# Project
+*.wasm
+dist/*
