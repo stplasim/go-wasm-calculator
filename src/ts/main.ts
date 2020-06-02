@@ -1,8 +1,8 @@
-import '../css/style.css';
+import Go = wasm.Go;
 
+import '../css/style.css';
 import './calc';
 
-// @ts-ignore
 const go = new Go();
 
 if('instantiateStreaming' in WebAssembly) {
