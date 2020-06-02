@@ -1,5 +1,5 @@
 {
-  "name": "webassembly-calc",
+  "name": "go-webassembly-calculator",
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
