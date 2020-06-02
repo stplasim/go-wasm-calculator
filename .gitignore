@@ -1,0 +1,7 @@
+# IDE and OS files
+.idea
+.DS_Store
+
+# node stuff
+node_modules
+ 
