@@ -25,8 +25,8 @@ jobs:
 
       - name: Copy WASM Lib
         run: |
-          mkdir ./src/lib
-          cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./src/lib/
+          mkdir ./dist/
+          cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" ./dist
 
       - name: Setup NodeJS
         uses: actions/setup-node@v1
