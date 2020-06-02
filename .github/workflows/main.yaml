@@ -22,9 +22,8 @@ jobs:
         run: |
           cd ./src/go/
           make build
-          
+
       - name: Copy WASM Lib
         run: |
-          cd ./src/lib
           cp "$(go env GOROOT)/misc/wasm/wasm_exec.js" .
 
